@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Belly Full Cafe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1552566626-52f8b828add9?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVzdGF1cmFudHN8ZW58MHx8MHx8fDA%3D");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Belly<br>Full Cafe</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Belly<br>Full cafe</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Main</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Veg Schezwan Paneer Noodles </b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹199</span></h1>
+      <p class="w3-text-grey">Noodles tossed with paneer and vegetables in a spicy Schezwan sauce.</p>
+      <hr>
+   
+      <h1><b>Chicken Schezwan Fried Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹219</span></h1>
+      <p class="w3-text-grey">Fried rice mixed with chicken and vegetables, flavored with spicy Schezwan sauce</p>
+      <hr>
+      
+      <h1><b>Prawns Schezwan Fried Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹229</span></h1>
+     <p class="w3-text-grey">A seafood twist to the classic fried rice, infused with spicy Schezwan flavors</p>
+      <hr>
+
+      <h1><b>Chicken Tikka Roll</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹171</span></h1>
+      <p class="w3-text-grey">Grilled chicken tikka wrapped in a roll, served with fries, salad, and mayonnaise.
+
+      </p>
+      <hr>
+
+      <h1><b>Chicken Chilli Gravy</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹179</span></h1>
+      <p class="w3-text-grey">Boneless chicken pieces stir-fried with vegetables in a spicy sauce</p>
+      <hr>
+
+      <h1><b>Paneer Manchurian Gravy</b><span class="w3-right w3-tag w3-dark-grey w3-round">₹194</span></h1>
+      <p class="w3-text-grey">Fried paneer pieces tossed in a tangy Manchurian sauce.</p>
+    </div>
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Gobi Manchurian </b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹135</span></h1>
+      <p class="w3-text-grey">Cauliflower florets battered and cooked in a flavorful Indo-Chinese sauce.</p>
+      <hr>
+   
+      <h1><b>Chicken 65</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹199</span></h1>
+      <p class="w3-text-grey">Deep-fried chicken pieces marinated in a blend of Indian spices, offering a fiery kick.</p>
+      <hr>
+      
+      <h1><b>Gobi 65</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹135</span></h1>
+      <p class="w3-text-grey">Crispy cauliflower florets tossed in a spicy, tangy sauce—a South Indian favorite.</p>
+      <hr>
+
+      <h1><b>Egg Chilli / Manchurian </b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹159</span></h1>
+      <p class="w3-text-grey">Boiled egg pieces sautéed in a spicy sauce, blending Indian and Chinese flavors.</p>
+    </div>
+
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      
+   
+      <h1><b>Paneer Protein Salad </b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹190</span></h1>
+      <p class="w3-text-grey">A healthy mix of cottage cheese and fresh vegetables, served with garlic bread.</p>
+      <hr>
+      
+      <h1><b>Chicken Protein Salad </b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹199</span></h1>
+      <p class="w3-text-grey">Grilled chicken combined with fresh greens, offering a protein-rich meal</p>
+      <hr>
+      
+      
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>Welcome to Belly Full Cafe, where great food meets warm hospitality.
+
+        Founded with a passion for flavor and community,Belly Full Cafe offers a unique dining experience that blends traditional recipes with a modern twist. Whether you're here for a quick lunch, a cozy dinner, or a celebration with loved ones, we take pride in serving dishes made with the freshest ingredients and a whole lot of love.
+        
+        Our chefs bring creativity and care to every plate, and our team is dedicated to making you feel right at home. From our signature [dish name] to our handcrafted drinks and desserts, there’s something on the menu for everyone to enjoy.
+        
+        Come hungry, leave happy—welcome to the Belly Full Cafe family.</p>
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
